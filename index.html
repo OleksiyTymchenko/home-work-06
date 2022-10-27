@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="page">
+          <form class="account">
+            <h2 class="form-title">Create an Account</h2>
+
+            <div class="row">
+              <div class="box">
+                <label for="first-name"> First Name</label>
+                <input checked name="firstname" type="text" id="first-name" />
+              </div>
+              <!-- /.box -->
+              <div class="box">
+                <label for="last-name"> Last Name</label>
+                <input name="firstname" type="text" id="last-name" />
+              </div>
+              <!-- /.box -->
+            </div>
+
+            <div class="row long">
+              <label for="mail-input">E-mail</label>
+              <input type="email" name="email" id="mail-input" />
+              <p class="explanation">
+                We'll never share your email with anyone else.
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="radio_box">
+                <label for="gender" class="gender">Male</label>
+                <input class="radio" type="radio" id="gender" name="gender" />
+              </div>
+              <!-- /.radio_box -->
+              <div class="radio_box">
+                <label for="gender2" class="gender">Female</label>
+                <input class="radio" type="radio" id="gender2" name="gender" />
+              </div>
+              <!-- /.radio_box -->
+            </div>
+
+            <div class="row">
+              <div class="country_box">
+                <label class="country" for="country"> Country</label>
+                <select name="country" id="country">
+                  <option class="select" value="Select">Select</option>
+                  <option value="UK">UK</option>
+                  <option value="USA">USA</option>
+                  <option value="Ukraine">Ukraine</option>
+                </select>
+              </div>
+              <!-- /.country_box -->
+
+              <label>
+                City
+                <input name="lastname" type="text" />
+              </label>
+            </div>
+
+            <button class="button">Sign Up</button>
+            <p class="explanation exp_button">
+              By clicking the 'Sign Up' button, you confirm that you accept our
+              <span class="blue">Terms of Use</span> and
+              <span class="blue">Privacy Policy</span>
+            </p>
+            <p class="long">
+              Have an account? <span class="blue1">Log In</span>
+            </p>
+          </form>
+        </div>
+        <!-- /.page -->
+        <div class="page">
+          <form class="account">
+            <h2 class="form-title">Profile</h2>
+
+            <div class="row">
+              
+              
+              <img class="user" src="./img/user.png" alt="user photo">
+              <div class="profile-photo-row">
+                <div class="profile-photo-row__photo">
+                  <div class="profile-photo-row__photo__profile-photo"></div>
+                  <!-- /.profile-photo-row__photo__profile-photo -->
+                  <div class="profile-photo-row__input-row">
+                    
+                    <div class="choose-photo">
+                      <label class="form-item">
+                        <input type="file" class="form-item__input" />
+  
+                        <svg
+                          class="form-item__icon"
+                          viewBox="0 0 16 16"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4.78016 3.33333L6.00016 2H10.0002L11.2202 3.33333H13.3335C14.0668 3.33333 14.6668 3.93333 14.6668 4.66667V12.6667C14.6668 13.4 14.0668 14 13.3335 14H2.66683C1.9335 14 1.3335 13.4 1.3335 12.6667V4.66667C1.3335 3.93333 1.9335 3.33333 2.66683 3.33333H4.78016ZM4.66683 8.66667C4.66683 10.5067 6.16016 12 8.00016 12C9.84016 12 11.3335 10.5067 11.3335 8.66667C11.3335 6.82667 9.84016 5.33333 8.00016 5.33333C6.16016 5.33333 4.66683 6.82667 4.66683 8.66667ZM8.00016 10.8C9.17837 10.8 10.1335 9.84487 10.1335 8.66667C10.1335 7.48846 9.17837 6.53333 8.00016 6.53333C6.82196 6.53333 5.86683 7.48846 5.86683 8.66667C5.86683 9.84487 6.82196 10.8 8.00016 10.8Z"
+                          />
+                        </svg>
+                      </label>
+                      <!-- /.form-item -->
+                    </div>
+                    <!-- /.profile-photo-row__input-row__choose-photo -->
+                    <div
+                      class="profile-photo-row__input-row__deletephoto deletephoto_border"
+                    ></div>
+                    <!-- /.profile-photo-row__input-row__deletephoto -->
+  
+                      <p class="explanation exp_photo">Up to 1 MB (300x300 px)</p>
+                    
+                  </div>
+                  <!-- /.profile-photo-row__input-row -->
+                  <div class="trash_box">
+                    <img src="./img/Trash.png" alt="" class="choose-And-Delete">
+                  </div>
+                  <!-- /.trash_box -->
+                </div>
+                <!-- /.profile-photo-row__photo -->
+              </div>
+              <!-- /.profile-photo-row -->
+              
+            </div>
+
+            <div class="row">
+              <div class="box">
+                <label for="first-name"> Name</label>
+                <input checked name="firstname" type="text" id="first-name" />
+              </div>
+              <!-- /.box -->
+              <div class="box">
+                <label for="last-name"> E-mail</label>
+                <input name="firstname" type="text" id="last-name" />
+              </div>
+              <!-- /.box -->
+            </div>
+
+            <div class="row">
+              <div class="country_box">
+                <label class="country" for="country"> Country</label>
+                <select name="country" id="country">
+                  <option class="select" value="Select">Select</option>
+                  <option value="UK">UK</option>
+                  <option value="USA">USA</option>
+                  <option value="Ukraine">Ukraine</option>
+                </select>
+              </div>
+              <!-- /.country_box -->
+
+              <label>
+                City
+                <input name="lastname" type="text" />
+              </label>
+            </div>
+
+            <div class="row">
+              <label class="zip_righ">
+                Zip Code
+                <input name="lastname" type="text" />
+              </label>
+
+              <label>
+                City
+                <input name="lastname" type="text" />
+              </label>
+            </div>
+
+            <button class="button btn-width">Update</button>
+
+          </form>
+          
+          
+
+        </div>
+        <!-- /.form-part -->
+        </div>
+        <!-- /.page -->
+      </div>
+      <!-- /.container -->
+    </section>
+  </body>
+</html>
